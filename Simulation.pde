@@ -1,4 +1,4 @@
-import controlP5.*; //<>// //<>// //<>//
+import controlP5.*; //<>//
 import javax.swing.*;
 import javax.swing.plaf.*;
 import java.awt.*;
@@ -146,7 +146,7 @@ void draw() {
   fill(0);
   textSize(18);
   textAlign(CENTER);
-  text("Size range: 50 - 177\nDistance Range: 140 - 410", (900 + width) / 2, 23);
+  text("Size range: 0 - 100\nDistance Range: 0 - 100", (900 + width) / 2, 23);
 
   textAlign(LEFT);  
   textSize(25);

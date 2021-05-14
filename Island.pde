@@ -13,15 +13,19 @@ class Island {
   }
 
   void changeSize(float d) {
+    if (d > 100) return;
+    d = map(d, 0, 100, 50, 177);
     if (!Float.isNaN(d)) {
+      pos.y += (w - d)/2;
       w = d;
       h = d;
     }
   }
 
   void changeDistance(float y) {
+    y = map(y, 0, 100, 140, 312);
     if (!Float.isNaN(y)) {
-      pos.y = height - y;
+      pos.y = height - y - (w / 2);
     }
   }
 
